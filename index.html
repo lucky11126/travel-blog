@@ -2,53 +2,69 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Mon Blog Voyage</title>
+  <title>Mon Blog Voyage – Itinéraires & Conseils</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>🌍 Mon Blog Voyage</h1>
-    <p>Partage d’itinéraires, conseils et découvertes</p>
+  <!-- Header principal -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>🌍 Mon Blog Voyage</h1>
+      <p>Partage d’aventures, itinéraires & bons plans</p>
+    </div>
   </header>
 
-  <!-- Navigation -->
-  <nav>
+  <!-- Navigation principale -->
+  <nav class="main-nav">
     <a href="index.html">Accueil</a>
-    <a href="articles/paris.html">Paris</a>
-    <a href="articles/rome.html">Rome</a>
     <a href="about.html">À propos</a>
     <a href="contact.html">Contact</a>
+    <a href="articles/paris.html">Destinations</a>
   </nav>
 
-  <hr>
+  <!-- Featured / Articles mis en avant -->
+  <section class="featured">
+    <h2>Articles récents</h2>
+    <div class="cards">
 
-  <!-- Section À la une -->
-  <section id="featured">
-    <h2>À la une</h2>
-    <article>
-      <h3>3 jours à Paris</h3>
-      <p>Découvrez mon itinéraire de 3 jours dans la capitale française.</p>
-      <a href="articles/paris.html">Lire l'article →</a>
-    </article>
+      <div class="card">
+        <a href="articles/paris.html">
+          <img src="images/paris/eiffel.jpg" alt="Paris - Tour Eiffel">
+          <h3>3 jours à Paris</h3>
+          <p>Itinéraire complet pour découvrir la capitale.</p>
+        </a>
+      </div>
 
-    <article>
-      <h3>Rome en 5 jours</h3>
-      <p>Un guide rapide pour visiter Rome et ses incontournables.</p>
-      <a href="articles/rome.html">Lire l'article →</a>
-    </article>
+      <div class="card">
+        <a href="articles/rome.html">
+          <img src="images/rome/colisee.jpg" alt="Rome - Colisée">
+          <h3>Rome en 5 jours</h3>
+          <p>Les incontournables de la ville éternelle.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="articles/tokyo.html">
+          <img src="images/tokyo/shibuya.jpg" alt="Tokyo - Shibuya">
+          <h3>Tokyo : Guide pratique</h3>
+          <p>Découvrir Tokyo entre tradition et modernité.</p>
+        </a>
+      </div>
+
+    </div>
   </section>
 
-  <!-- Section À propos -->
-  <section id="about">
-    <h2>À propos du blog</h2>
-    <p>Bienvenue sur mon blog voyage ! Je partage mes expériences, itinéraires et conseils pour vous aider à préparer vos voyages.</p>
+  <!-- À propos rapide -->
+  <section class="about-preview">
+    <h2>Qui sommes‑nous ?</h2>
+    <p>Sur ce blog, je partage mes itinéraires, conseils et bons plans pour t’aider à voyager mieux et moins cher.</p>
+    <a href="about.html" class="btn">En savoir plus</a>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Mon Blog Voyage</p>
+  <footer class="site-footer">
+    <p>© 2026 Mon Blog Voyage</p>
   </footer>
 
 </body>
